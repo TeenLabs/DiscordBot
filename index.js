@@ -47,7 +47,7 @@ fs.readdir("./commands/", (err,files) => {
 //  ALORS : execute ce qui est entre { }
 bot.on("ready", async () => {
     console.log(`============================\n||  ${bot.user.username} est connecté  ||\n============================\n`);
-    bot.user.setActivity("version 1.0.0", {types:"STREAMING"});
+    bot.user.setActivity("version 0.0.2", {type:"COMPETITING"});
 })
 
 //  SI un message est envoyé (sur le serveur), 
