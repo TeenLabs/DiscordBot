@@ -7,7 +7,7 @@ module.exports.run = async(bot,message,args) => {
         .setTitle('Informations')
         .setURL('https://teenlabs.fr/content/4-qui-sommes-nous')
         .setThumbnail('https://d1fdloi71mui9q.cloudfront.net/pJXqaoKkRveBxFLnBOkx_qeaEA43N4iAiVIqn')
-        .setDescription("TeenLabs recherche et partage les meilleures activités disponibles pour les adolescent.e.s, de 12 à 20 ans.\n\nTeenLabs accompagne les jeunes pour les aider à donner au Numérique une place de choix dans leur avenir.\n\nhttps://youtu.be/e8iTg-0YdIw")
+        .setDescription("TeenLabs recherche et partage les meilleures activités disponibles pour les adolescent.e.s, de 12 à 20 ans.\n\nTeenLabs accompagne les jeunes pour les aider à donner au Numérique une place de choix dans leur avenir.")
         .addField("Instagtam :","https://www.instagram.com/teenlabs.fr/")
         .addField("Facebook :","https://teenlabs.fr/content/4-qui-sommes-nous")
         .addField("Linktree :","https://linktr.ee/TeenLabs.fr")
