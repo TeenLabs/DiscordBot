@@ -3,13 +3,13 @@
     "discord": "^0.8.2",
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "python-shell": "^3.0.0"
   },
   "name": "discordbot",
   "version": "1.0.0",
   "description": "TeenBot is the Discord bot of teenlabs.fr, a website that brings together digital activities throughout France",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "node index.js"
   },

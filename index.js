@@ -47,7 +47,7 @@ fs.readdir("./commands/", (err,files) => {
 //  ALORS : execute ce qui est entre { }
 bot.on("ready", async () => {
     console.log(`============================\n||  ${bot.user.username} est connecté  ||\n============================\n`);
-    bot.user.setActivity("version 0.0.2", {type:"COMPETITING"});
+    bot.user.setActivity("version 0.0.2", {type:"STREAMING"});
 })
 
 //  SI un message est envoyé (sur le serveur), 
@@ -57,7 +57,7 @@ bot.on("message", async message =>{
     if (!message.content.startsWith(prefix)) return;    // pareil si le message ne commence pas par le prefix
 
     let content = message.content.split(" ");     // exemple de commande : %salut comment ca va ? : content sera alors = %salut,comment,ca,va,?
-    let command = content[0];                     // avec la même commande : command est = %salut
+    let command = content[0].toLowerCase();                     // avec la même commande : command est = %salut
     let args = content.slice(1);                  // toujours avec la même : args est = comment,ca,va,?
 
     
