@@ -1,4 +1,5 @@
 // Importation des Librairies 
+const { randomInt } = require('crypto');
 const Discord = require('discord.js');
 const fs = require('fs');                   // fs sert à écrire dans et récupérer le contenu de fichiers/dossiers
 
@@ -42,12 +43,20 @@ fs.readdir("./commands/", (err,files) => {
 
 });
 
-
+const activity_list = [
+    "version 0.2",
+    `${prefix}info`,
+    `${prefix}help`
+]
 //  SI bot connecté, 
 //  ALORS : execute ce qui est entre { }
 bot.on("ready", async () => {
     console.log(`============================\n||  ${bot.user.username} est connecté  ||\n============================\n`);
-    bot.user.setActivity("version 0.0.2", {type:"STREAMING"});
+    setInterval(() => {
+        let index = Math.round(Math.random() * (activity_list.length - 1));
+        bot.user.setActivity(`${activity_list[index]}`, {type:"PLAYING"});
+    },10000)
+    
 })
 
 //  SI un message est envoyé (sur le serveur), 
@@ -62,7 +71,7 @@ bot.on("message", async message =>{
 
     
     let commandfile = bot.commands.get(command.slice(prefix.length)) || bot.commands.get(bot.aliases.get(command.slice(prefix.length)))
-    if (commandfile) commandfile.run(bot,message,args);
+    if (commandfile) commandfile.run(bot,message,args,prefix);
 })
 
 // Connexion du bot via le token
