@@ -1,11 +1,15 @@
 const Discord = require('discord.js')
 const fs = require('fs');
+const { get } = require('http');
 const {PythonShell} = require('python-shell')
 
 async function test () {
     PythonShell.run('get_receipe.py', null, function (err) {
             if (err) throw err;
-            console.log('finished');
+            let today = new Date();
+            let date = `${today.getDay()}/${today.getMonth()}/${today.getFullYear()}`
+            let heure = `${today.getHours()}:${today.getMinutes()}`
+            console.log('programme `get_receipe.py` executé le  '+`${date} à ${heure}`);
         });
 }
 

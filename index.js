@@ -1,5 +1,4 @@
 // Importation des Librairies 
-const { randomInt } = require('crypto');
 const Discord = require('discord.js');
 const fs = require('fs');                   // fs sert à écrire dans et récupérer le contenu de fichiers/dossiers
 
@@ -53,7 +52,7 @@ const activity_list = [
 bot.on("ready", async () => {
     console.log(`============================\n||  ${bot.user.username} est connecté  ||\n============================\n`);
     setInterval(() => {
-        let index = Math.round(Math.random() * (activity_list.length - 1));
+        let index = Math.round(Math.random() * (activity_list.length - 1));  // ici on stock dans la variable index un nombre entier aléatoire entre 0 et la longueur de la liste activity_list
         bot.user.setActivity(`${activity_list[index]}`, {type:"PLAYING"});
     },10000)
     

@@ -14,7 +14,7 @@ module.exports.run = async(bot,message,args) => {
         .addField("Ils en parlent :","https://www.cnews.fr/vie-numerique/2021-03-11/teenlabs-se-former-au-numerique-des-ladolescence-1057206");
     
         await message.channel.send(embed)
-        await message.channel.send('*Une vidéo est peut être plus parlante*\n👉 https://youtu.be/e8iTg-0YdIw')
+        await message.channel.send('*Flemme de lire ?*\n👉 https://youtu.be/e8iTg-0YdIw')
 }
 
 module.exports.config = {
