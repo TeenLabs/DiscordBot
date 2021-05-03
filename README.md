@@ -3,7 +3,7 @@ TeenBot is the Discord bot of **teenlabs.fr**'s server, a website that brings to
 
 It is using Javascript mainly and a bit of Python for some specifics actions.
 
-*You can ask to help, we won't accept everyone but you can still ask to know.*
+*You can ask to help, we won't accept everyone but you can still ask.*
 
 <hr>
 
