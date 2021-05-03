@@ -21,6 +21,6 @@ module.exports.run = async(bot,message,args) => {
 
 
 module.exports.config = {
-    name:"charge les recettes",             // name est le nom de la commande
-    aliases:["load_receipe","charge_recette"]   // aliases est une liste regroupant les alias de cette commande
+    name:"charge la recette",             // name est le nom de la commande
+    aliases:["load_receipe","charge_recette","charge la dernière recette","charge les recettes"]   // aliases est une liste regroupant les alias de cette commande
 }

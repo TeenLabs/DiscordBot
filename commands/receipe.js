@@ -21,5 +21,5 @@ module.exports.run = async(bot,message,args) => {
 
 module.exports.config = {
     name:"recette",
-    aliases:["rec","receipe"]
+    aliases:["rec","receipe","recettes"]
 }
